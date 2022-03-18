@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "56697ECC-3AEE-4C7F-9A24-7263F23A15F2",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Home",
+        "identifier" : "HomeTests",
+        "name" : "HomeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

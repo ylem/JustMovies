@@ -1,0 +1,54 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Navigation Usage") {
+        This tutorial guides you on using _Navigation_ for navigating between views. 
+        
+        @Image(source: navigation-title.png, alt: "navigation title image")
+    }
+    
+    @Section(title: "Navigation Usage") {
+        @ContentAndMedia {
+            Create an empty project with SwiftUI interface + iOS 14.0 deployment target and make sure you have added the _Navigation_ package as a dependency.
+            
+            @Image(source: tutorial-create-new-project.png, alt: "create a new project")
+        }
+        
+        @Steps {
+            @Step {
+                Create a view called ContentView containing a view called RootView which will be used for the demo.
+                @Code(name: "ContentView.swift", file: 01-navigation-usage-01.swift) 
+            }
+            
+            @Step {
+                Inside your RootView include 3 buttons, to show the 3 different ways of presenting a view (`.push`, `.sheet` and `.fullcover`).
+                @Code(name: "RootView.swift", file: 01-navigation-usage-02.swift) {
+                    @Image(source: 01-navigation-usage-list.png, alt: "show list of button view")
+                }
+            }
+            
+            @Step {
+                Add the Navigation framework with _import Navigation_.
+                Add a private _@StateObject_ Navigation property named `navigation`.
+                Add the viewModifier _.uses(navigation)_ to your view.
+                That's all, now you can navigate to the next screen.
+                @Code(name: "RootView.swift", file: 01-navigation-usage-03.swift) {
+                    @Image(source: 01-navigation-usage-list.png, alt: "show list of button view")
+                }
+            }
+            
+            @Step {
+                Add a function called ``Navigation/Navigation/present(_:destination:onDismiss:)`` to show the next screen. Add the function as each button action, with the different _Navigation Type_
+                @Code(name: "RootView.swift", file: 01-navigation-usage-04.swift) {
+                    @Image(source: 01-navigation-usage-list.png, alt: "show list of button view")
+                }
+            }
+            
+            @Step {
+                Create a view called _DetailView_ as a demo destination of the navigation.
+                To see the workflow, run the project on a simulator and press the each button from the root view. 
+                @Code(name: "DetailView.swift", file: 01-navigation-usage-05.swift) {
+                    @Image(source: 01-navigation-usage-mov.mp4, alt: "show list of button view")
+                }
+            }
+        }
+    }
+}

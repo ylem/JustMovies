@@ -1,0 +1,14 @@
+@Tutorials(name: "Navigation") {
+    @Intro(title: "Navigation Tutorials") {
+        Create an Xcode project to start learning how to use custom Navigation.
+    }
+    
+    @Chapter(name: "Navigation Essentials") {
+        Cover the essentials of navigation workflow to start using the library to route to some of your views.
+        
+        @Image(source: navigation-title.png, alt: "navigation title image")
+        
+        @TutorialReference(tutorial: "doc:Navigation-Usage")
+        @TutorialReference(tutorial: "doc:Navigation-Dismiss-Tip")
+    }
+}

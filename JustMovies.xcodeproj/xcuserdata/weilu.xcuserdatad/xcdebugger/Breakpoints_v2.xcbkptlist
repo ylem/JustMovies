@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "034FD226-A980-4CA7-B883-3F72B4FC5A31"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8702A6C4-D74B-4E15-BB7E-EC5D365B684B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Sources/Networking/Extensions/ULRSession+SessionProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "publisher(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8702A6C4-D74B-4E15-BB7E-EC5D365B684B - bf235a5db24ea9a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; Networking.HTTPError in __C.NSURLSession.publisher&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Networking.RequestData) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_0, Networking.HTTPError&gt;"
+                  moduleName = "JustMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weilu/Projects/JustMovies/Networking/Sources/Networking/Extensions/ULRSession+SessionProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "589">
+               </Location>
+               <Location
+                  uuid = "8702A6C4-D74B-4E15-BB7E-EC5D365B684B - 755b51171670726"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; Networking.HTTPError in __C.NSURLSession.publisher&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Networking.RequestData) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_0, Networking.HTTPError&gt;"
+                  moduleName = "HomeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weilu/Projects/JustMovies/Networking/Sources/Networking/Extensions/ULRSession+SessionProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "607">
+               </Location>
+               <Location
+                  uuid = "8702A6C4-D74B-4E15-BB7E-EC5D365B684B - dfb1708746e1639d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; Networking.HTTPError in __C.NSURLSession.publisher&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Networking.RequestData) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_0, Networking.HTTPError&gt;"
+                  moduleName = "HomeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weilu/Desktop/JustMovies/Networking/Sources/Networking/Extensions/ULRSession+SessionProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "607">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

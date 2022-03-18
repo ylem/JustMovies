@@ -1,0 +1,72 @@
+@Tutorial(time: 20) {
+    @Intro(title: "Dismiss to the root view") {
+        This tutorial shows how to pop back to the _RootView_ from some pushed views.
+        
+        @Image(source: navigation-title.png, alt: "navigation title image")
+    }
+    
+    @Section(title: "Dismiss Navigation") {
+        @ContentAndMedia {
+            Create a SwiftUI project with 3 views, the demo will show you how to dismiss the presented view from the pushed view.
+            
+            @Image(source: tutorial-create-new-project.png, alt: "create a new project")
+        }
+        
+        @Steps {
+            @Step {
+                Create a view called RootView containing a button used to present a demo `profile` view 
+                @Code(name: "RootView.swift", file: 02-navigation-dismiss-01.swift){
+                    @Image(source: 02-navigation-dismiss-rootview.png, alt: "show root view")
+                }
+            }
+            
+            @Step {
+                Import ``Navigation/Navigation`` to the file, so the button can use this module to push to _DetailView_.
+                @Code(name: "RootView.swift", file: 02-navigation-dismiss-02.swift) {
+                    @Image(source: 02-navigation-dismiss-rootview.png, alt: "show root view")
+                }
+            }
+            
+            @Step {
+                Create a view called DetailView and make the button _push_ to #2 screen using the NavigationType of ``Navigation/NavigationType/push`` . 
+                @Code(name: "DetailView.swift", file: 02-navigation-dismiss-03.swift) {
+                    @Image(source: 02-navigation-dismiss-detailview.png, alt: "show detail view")
+                }
+            }
+            
+            @Step {
+                Add an _Environment_ variable of ``Navigation/RootPresentationMode`` (*NOT EnvironmentObject*), with the value of the _@Published_ property ``Navigation/Navigation/isPushed`` 
+                @Code(name: "DetailView.swift", file: 02-navigation-dismiss-04.swift) {
+                    @Image(source: 02-navigation-dismiss-detailview.png, alt: "show detail view")
+                }
+            }
+            
+            @Step {
+                Create a new view which includes a button to _push_ ``Navigation/NavigationType/push`` to screen #3.
+                *Note* - the ``Navigation/Navigation`` is just a _ViewModifier_, so you need to add it into each view if you want to push or present.
+                @Code(name: "BlueView.swift", file: 02-navigation-dismiss-05.swift) {
+                    @Image(source: 02-navigation-dismiss-page2.png, alt: "show page 2")
+                }
+            }
+            
+            @Step {
+                Create a new view to use as #3 screen. We will pop back to _DetailView_ directly from here.
+                @Code(name: "YellowView.swift", file: 02-navigation-dismiss-06.swift) {
+                    @Image(source: 02-navigation-dismiss-page3.png, alt: "show page 3")
+                }
+            }
+            
+            @Step {
+                Add the variable _@Environment(\.rootPresentationMode)_ ``Navigation/RootPresentationMode`` into the view. We will be using it to pop back to the root (initial) view.
+                @Code(name: "YellowView.swift", file: 02-navigation-dismiss-07.swift) {
+                    @Image(source: 02-navigation-dismiss-page3.png, alt: "show page 3")
+                }
+            }
+            
+            @Step {
+                To see the workflow, run the project on a simulator and navigate to the _PushedView_.
+                @Image(source: 02-navigation-usage-mov.mp4, alt: "demo of the pop to root view workflow.")
+            }
+        }
+    }
+}
