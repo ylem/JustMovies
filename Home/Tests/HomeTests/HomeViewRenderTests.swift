@@ -29,6 +29,6 @@ final class HomeViewRenderTests: XCTestCase {
         let view = HomeView()
             .environmentObject(store)
         let viewController = UIHostingController(rootView: view)
-        assertSnapshot(matching: viewController, as: .image(on: .iPhoneX))
+        assertSnapshot(matching: viewController, as: .image(on: .iPhone8))
     }
 }
