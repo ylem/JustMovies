@@ -32,6 +32,9 @@ struct HomeView: View {
                 )
 
                 SearchBar(text: $searchQuery)
+                    .onChange(of: $searchQuery) { newValue in
+                        #warning("search by category (movie, tv, or people)")
+                    }
 
                 PopularListView(title: "Popular Movies", items: movies)
 
