@@ -6,9 +6,11 @@ public class DiskStorage: DataStore {
     private let applicationSupportDirectoryURL: URL
 
     public init() {
-        let appSupportURLs = fileManager.urls(for: .applicationSupportDirectory,
-                                              in: .userDomainMask)
-        guard let url = appSupportURLs.first else {
+        guard let url = try? fileManager.url(for: .applicationSupportDirectory,
+                                             in: .userDomainMask,
+                                             appropriateFor: nil,
+                                             create: true)
+        else {
             fatalError("No application support directory url found")
         }
         applicationSupportDirectoryURL = url

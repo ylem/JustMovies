@@ -9,10 +9,10 @@ import Foundation
 
 public struct Movie: Codable, PopularType {
     public var id: Int
-    public var backdropPath: String
-    public var posterPath: String
+    public var backdropPath: String?
+    public var posterPath: String?
     public var title: String?
-    public var name: String? = nil
+    public var name: String?
     public var voteAverage: Double
     public var voteCount: Double
     public var overview: String
