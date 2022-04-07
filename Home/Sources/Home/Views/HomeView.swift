@@ -32,7 +32,7 @@ struct HomeView: View {
                 )
 
                 SearchBar(text: $searchQuery)
-                    .onChange(of: $searchQuery) { newValue in
+                    .onChange(of: searchQuery) { newValue in
                         #warning("search by category (movie, tv, or people)")
                     }
 
